@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <header>
+           <div class="menu">
+              <div class="logo">
+                  <img src="img/mamon.png">
+                  <a href="">mamondots</a>
+              </div>
+              <div class="nav">
+                 <ul>
+                  <li><a href="">features</a></li>
+                  <li><a href="">pricing</a></li>
+                  <li><a href="">tours</a></li>
+                  <li><a href="">explore <i class="fa-solid fa-angle-down"></i></a></li>
+                 </ul>
+              </div>
+           </div>
+           <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="header-btn">account</button>
+           </div>
+       </header>
+       <main>
+           <div class="content">
+              <div class="info">
+                 <h1 class="title">
+                   Lorem <br><span>ipsum</span> <br>dolor sit <br>amet 
+                 </h1>
+                 <p class="text">
+                  Lorem ipsum dolor sit amet consectetur <br>adipisicing elit.
+                 </p>
+                 <div class="content-btn">
+                     <button class="btn btn-1">Get Started</button>
+                     <button class="btn btn-2"><i class="fa-solid fa-play"></i> How it</button>
+                 </div>
+              </div>
+              <div class="content-img">
+                <div class="circle">
+                  <div class="playbtn">
+                     <img src="img/play.png">
+                 </div>
+                   <div class="comouter">
+                       <img src="img/computer.png">
+                   </div>
+                   <div class="mouse">
+                     <img src="img/mouse.png">
+                 </div>
+                </div>
+              </div>
+           </div>
+       </main>
+       <div class="conar-circle"></div>
+       <div class="conar-circle conar-circle2"></div>
+       <div class="conar-circle conar-circle3"></div>
+       <div class="conar-circle conar-circle4"></div>
+       <div class="conar-circle conar-circle5"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
+    <script>
+      let animation = anime({
+       targets: 'header',
+       translateY:[-40,0],
+       opacity:[0,1],
+       duration: 1000,
+       easing: 'easeInOutExpo',
+       }); 
+
+       anime({
+       targets: '.title',
+       translateX:[-80,0],
+       opacity:[0,1],
+       duration: 2000,
+       easing: 'easeInOutExpo',
+       }); 
+
+       anime({
+       targets: '.text',
+       translateX:[80,0],
+       opacity:[0,1],
+       duration: 2000,
+       easing: 'easeInOutExpo',
+       });
+
+       anime({
+       targets: '.content-btn',
+       translateY:[80,0],
+       opacity:[0,1],
+       duration: 2000,
+       easing: 'easeInOutExpo',
+       });
+
+       anime({
+       targets: '.comouter',
+       translateX:[80,0],
+       opacity:[0,1],
+       duration: 3000,
+       easing: 'easeInOutExpo',
+       });
+       anime({
+       targets: '.playbtn',
+       translateY:[80,0],
+       opacity:[0,1],
+       duration: 3000,
+       easing: 'easeInOutExpo',
+       });
+
+       anime({
+       targets: '.mouse',
+       translateX:[-80,0],
+       opacity:[0,1],
+       duration: 3000,
+       easing: 'easeInOutExpo',
+       });
+
+       anime({
+       targets: '.conar-circle',
+       translateX:[-80,0],
+       opacity:[0,1],
+       duration: 3000,
+       easing: 'easeInOutExpo',
+       });
+
+      
+
+
+</script>
+</body>
+</html>
